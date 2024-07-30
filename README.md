@@ -1,3 +1,3 @@
-# OlgaStude.gitHub.io
-Портфолио
-Ссылка: [Портфолио](https://olgastude.github.io/)
+# Портфолио
+
+Ссылка: [OlgaStude.gitHub.io](https://olgastude.github.io/)
