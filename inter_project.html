@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Interpals</title>
+</head>
+<body>
+    <div id="container">
+        <div id="go_up">
+            <a href="#nav">Наверх</a>
+        </div>
+        <div id="go_back">
+            <a href="#">Назад</a>
+        </div>
+        <div id="nav">
+            <div>
+                <h1>Оглавление</h1>
+                <img src="imgs/arror.png" alt="">
+            </div>
+            <ol>
+                <li><a href="#autorize">Авторизация и регистрация</a></li>
+                <li><a href="#posts">Посты</a></li>
+                <ol>
+                    <li><a href="#posts">Создание постов</a></li>
+                    <li><a href="#posts_1">Посты в ленте</a></li>
+                </ol>
+                <li><a href="#comments">Комментарии</a></li>
+                <ol>
+                    <li><a href="#comments">Комментирование</a></li>
+                    <li><a href="#comments_1">Сортировка комментариев</a></li>
+                    <li><a href="#comments_2">Лайки и дизлайки</a></li>
+                </ol>
+                <li><a href="#chat">Чат</a></li>
+                <ol>
+                    <li><a href="#chat">Написать сообщение</a></li>
+                    <li><a href="#chat_1">Почитано/непрочитано</a></li>
+                </ol>
+            </ol>
+            
+        </div>
+        <div id="about">
+            <h1>О проекте</h1>
+            <p><b>«InterPals»</b> - платформа для языкового обмена. Проект был создан для дальнейшего использования его в рамках других учебных проектов по анализу, оптимизации и тестированию.</p>
+            <p>Ссылка на репозиторий: <a href="https://github.com/OlgaStude/interpals">код проекта</a></p>
+            <p>Для разработки проекта были использованы фреймворки Laravel и Vue.js и платформа Pusher.
+            </p>
+            <div id="imgs">
+                <img src="imgs/laravel_logo.png" alt="">
+                <img src="imgs/vue_logo.png" alt="">
+            </div>
+            <svg height="200" preserveAspectRatio="xMidYMid" width="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0.1599999999999997 256.02071143641297 395.0285944836734"><path d="M127.995 394.55v-99.047c0-.208.114-.416.312-.52l127.391-73.49a.573.573 0 0 0 .302-.52v-28.157a.583.583 0 0 0-.884-.52l-126.227 72.825a.582.582 0 0 1-.884-.52v-28.177c0-.208.104-.406.291-.51l127.402-73.49a.615.615 0 0 0 .302-.52v-28.157a.604.604 0 0 0-.884-.52l-126.227 72.815a.582.582 0 0 1-.894-.51v-28.167c0-.208.114-.405.312-.51l127.391-73.458a.583.583 0 0 0 .302-.52V74.346a1.25 1.25 0 0 0-.583-1.02L128.587.16a1.165 1.165 0 0 0-1.175 0L103.29 14.08a.582.582 0 0 0 0 1.02l126.227 72.814a.603.603 0 0 1 0 1.019l-24.123 13.912c-.37.2-.815.2-1.185 0L77.39 29.698a1.248 1.248 0 0 0-1.247 0L52.092 43.6a.582.582 0 0 0 0 1.019l126.206 72.825a.582.582 0 0 1 0 1.03l-24.122 13.911a1.248 1.248 0 0 1-1.248 0L26.192 59.217a1.248 1.248 0 0 0-1.248 0L0 73.65v247.744c0 .208.104.416.302.51l24.413 14.088a.582.582 0 0 0 .884-.52V89.453a.582.582 0 0 1 .884-.51l24.434 14.09c.166.104.28.301.28.52v247.37c0 .207.105.415.292.519l24.414 14.1a.603.603 0 0 0 .904-.52v-246.05a.582.582 0 0 1 .884-.52l24.414 14.079a.603.603 0 0 1 .301.52v247.41a.62.62 0 0 0 .28.52l24.487 14.069a.582.582 0 0 0 .832-.51z" fill="#300d4f"/></svg>
+            <div id="links">
+                <a href="https://www.pngwing.com/en/free-png-azcmi">Изображение логотипа</a>
+                <a href="https://www.pngwing.com/en/free-png-kvtsw">Изображение логотипа</a>
+                <a href="https://worldvectorlogo.com/logo/pusher-1">Изображение логотипа</a>
+            </div>
+        </div>
+        <section style="margin-top: 20px;">
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/main.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="autorize">Авторизация и регистрация</h1>
+            <p>Чтобы воспользоваться возможностями сайта, пользователю нужно зарегистрироваться или авторизоваться. Валидация полей осуществляется на стороне сервера.
+                При регистрации проверяется уникальность почты, прочность пароля и является ли фото профиля изображением. Пользователь должен выбрать языки: один, на котором разговаривает и другой, который учит.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/register_validation.mp4" type="video/mp4">
+                </video>
+                <video loop muted>
+                    <source src="videos/inter/login_validate.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="posts">Посты</h1>
+            <p>На личной странице и на странице с лентой пользователь может создать новый пост.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/post_create.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="posts_1">
+            <p>Посты в ленте выводятся на выбранных пользователем языках. Он может выбрать вывод постов только на одном из них.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/dashboard_filter.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="comments">Комментарии</h1>
+            <p>Посты можно комментировать.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/comment.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="comments_1">
+            <p>Комментарии можно сортировать по рейтингу или по новизне.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/comment_filter.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="comments_2">
+            <p>Комментариям можно ставить лайки или дизлайки.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/like.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="chat">Чат</h1>
+            <p>На сайте пользователи могут общаться один на один друг с другом в реальном времени.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/chat.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="chat_1">
+            <p>Непрочитанные и прочитанные сообщения будут помечаться соответствующим образом.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/inter/unread.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <div id="credit_footer">
+            <p>Использованиые изображения:</p>
+            <div>
+                <p><a href="https://ru.freepik.com/free-photo/beautiful-lesbian-couple-celebrating-their-wedding-day-outdoors_57314062.htm">Изображение от freepik</a></p>
+                <p><a href="https://ru.freepik.com/free-photo/medium-shot-contemplative-man-seaside_47696347.htm">Изображение от freepik</a></p>
+                <p><a href="https://ru.freepik.com/free-photo/man-trekking-mountains_4145953.htm">Изображение от freepik</a></p>
+                <p><a href="https://ru.freepik.com/free-photo/freedom-concept-with-hiker-mountain_4149026.htm">Изображение от freepik</a></p>
+                <p><a href="https://ru.freepik.com/free-photo/molodaa-zensina-rabotausaa-iz-doma_20546284.htm">Изображение от freepik</a></p>
+                <p><a href="https://ru.freepik.com/free-photo/medium-shot-man-reading-digital-magazine_38308664.htm">Изображение от freepik</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/video_play.js"></script>
+</body>
+</html>

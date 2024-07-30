@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>photoStoked</title>
+</head>
+<body>
+    <div id="container">
+        <div id="go_up">
+            <a href="#nav">Наверх</a>
+        </div>
+        <div id="go_back">
+            <a href="#">Назад</a>
+        </div>
+        <div id="nav">
+            <div>
+                <h1>Оглавление</h1>
+                <img src="imgs/arror.png" alt="">
+            </div>
+            <ol>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <ol>
+                    <li><a href="#catalog">Метки</a></li>
+                    <li><a href="#catalog_1">Поиковая строка</a></li>
+                    <li><a href="#catalog_2">Фильтр</a></li>
+                </ol>
+                <li><a href="#autorize">Авторизация и регистрация</a></li>
+                <ol>
+                    <li><a href="#autorize">Валидация</a></li>
+                    <li><a href="#autorize_1">Авторизация</a></li>
+                </ol>
+                <li><a href="#editing">Редактирование данных о пользователе</a></li>
+                <li><a href="#send_work">Отправка работы</a></li>
+                <li><a href="#other_user">Страница другого пользователя</a></li>
+                <ol>
+                    <li><a href="#other_user">Добавить пользователя в избранное</a></li>
+                    <li><a href="#other_user_1">Пожаловаться на пользователя</a></li>
+                </ol>
+                <li><a href="#works">Взаимодействия с работами</a></li>
+                <ol>
+                    <li><a href="#works">Лайк</a></li>
+                    <li><a href="#works_1">Покупка</a></li>
+                    <li><a href="#works_2">Коллекции</a></li>
+                    <li><a href="#works_3">Добавление в коллекцию</a></li>
+                </ol>
+                <li><a href="#notes">Уведомления</a></li>
+                <li><a href="#admin">Действия администратора</a></li>
+                <ol>
+                    <li><a href="#admin">Выставить работу</a></li>
+                    <li><a href="#admin_1">Отклонить работу</a></li>
+                    <li><a href="#admin_2">Пользователи</a></li>
+                    <li><a href="#admin_3">Удаление пользователя</a></li>
+                </ol>
+            </ol>
+            
+        </div>
+        <div id="about">
+            <h1>О проекте</h1>
+            <p><b>«photoStoked»</b> - это фото-банк/фотосток, т. е. Интернет-платформа, предоставляющая возможность продажи и покупки лицензий на использование изображений. Проект создавался и был защищён как дипломный.</p>
+            <p>Ссылка на репозиторий: <a href="https://github.com/OlgaStude/photostoked">код проекта</a></p>
+            <p>Для разработки проекта были использованы фреймворки Laravel и Vue.js. Был использован модуль, установленный на Vue.js owl-carousel.</p>
+            <div id="imgs">
+                <img src="imgs/laravel_logo.png" alt="">
+                <img src="imgs/vue_logo.png" alt="">
+            </div>
+            <div id="owl">
+                <img src="imgs/owl.png" alt="">
+            </div>
+            <div id="links">
+                <a href="https://www.pngwing.com/en/free-png-azcmi">Изображение логотипа</a>
+                <a href="https://www.pngwing.com/en/free-png-kvtsw">Изображение логотипа</a>
+                <a href="https://owlcarousel2.github.io/OwlCarousel2/">Снимок экрана</a>
+            </div>
+        </div>
+        <section>
+            <h1 id="main">Главная</h1>
+            <p>На главной странице пользователю видны все новейшие работы, популярные авторы и слайдер с самыми популярными работами.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Main page.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="catalog">Каталог</h1>
+            <p>В каталоге пользователь может найти подходящий ему материал несколькими способами. Он может выбрать одну из существующих меток. Метки указываются при отправлении работы пользователем. И автоматически заносятся в базу данных и «приписываются» работе при её публикации на сайт.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Tags.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="catalog_1">
+            <p>Поиск также можно осуществить при помощи поисковой строки. При таком поиске находятся работы, чьи метки полностью или частично ответствуют содержанию поисковой строки.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Searchbar.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="catalog_2">
+            <p>Все работы или уже отобранные по метке или в соответствии с поисковым словом можно отфильтровать, уточнив формат или тип изображения.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Filter.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="autorize">Авторизация и регистрация</h1>
+            <p>Чтобы воспользоваться всеми возможностями сайта, пользователю нужно зарегистрироваться или авторизоваться. Валидация полей осуществляется на стороне сервера. При регистрации проверяются уникальность имени и почты, прочность пароля и является ли фото профиля изображением.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Register_err.mp4" type="video/mp4">
+                </video>
+                <video loop muted>
+                    <source src="videos/photo/login_err.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="autorize_1">
+            <p>При авторизации пользователя его переносит на его личную страницу.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/login.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="editing">Редактирование данных о пользователе</h1>
+            <p>Пользователь может отредактировать свои личные данные и добавить информацию о себе. Новые данные тоже проходят валидацию.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Edit.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="send_work">Отправка работы</h1>
+            <p>Пользователь может отправить свою работу на проверку. Она не появится на сайте, пока администрация не одобрит её.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/send.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="other_user">Страница другого пользователя</h1>
+            <p>При переходе на страницу другого пользователя у авторизованного пользователя появляется возможность добавить его в избранное.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Subscribe.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="other_user_1">
+            <p>На других пользователей можно отправить жалобу.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Reporting.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="works">Взаимодействия с работами</h1>
+            <p>Работы можно добавлять в понравившиеся.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Like.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="works_1">
+            <p>Пользователь имеет возможность приобрести определённое количество «покупок». Покупкой работы считается первое её скачивание. Тогда она добавляется в раздел «Мои покупки». После работу можно скачать неограниченное количество раз. За каждую покупку автору работы начисляются деньги на счёт сайта, которые потом можно вывести.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/download.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="works_2">
+            <p>Пользователь может создать коллекцию. Коллекции позволяют сохранять и объединять работы.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Collections.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="works_3">
+            <p>При добавлении первой работы в коллекцию она станет её обложкой. Если работа, которая была обложкой, будет удалена из коллекции, то её роль займёт другая.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Add_to_collection.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="notes">Уведомления</h1>
+            <p>На сайте присутствуют уведомления. Пользователь получает их, когда его работу выкладывают на сайт, его работе ставят лайк, его работу скачивают, когда пользователя добавляют в избранное.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Messages.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section>
+            <h1 id="admin">Действия администратора</h1>
+            <p>В панели администратора можно увидеть все отправленные на проверку работы. Их можно скачать для проведения проверки. После указания нужных данных работа выставляется. Администратор вручную загружает только версию изображения с водными знаками, оригинальная версия автоматически переноситься в папку принятых работ.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/Accept.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="admin_1">
+            <p>Работу можно отклонить.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/bad_work_delete.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="admin_2">
+            <p>В разделе работы с пользователями отображены все пользователи сайта, кроме администрации. Пользователя можно найти по имени с помощью поисковой строки.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/user_search.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <section id="admin_3">
+            <p>Пользователя можно удалить с сайта. Для этого нужно нажать на кнопку удаления дважды.</p>
+            <span>нажмите, чтобы включить демонстрацию</span>
+            <div class="video">
+                <video loop muted>
+                    <source src="videos/photo/delete.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts/video_play.js"></script>
+</body>
+</html>

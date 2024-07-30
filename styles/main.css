@@ -1,0 +1,165 @@
+*{
+    font-family: "Mulish", sans-seri;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+    #nav_btns{
+        display: flex;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+        #nav_btns p{
+            display: block;
+            width: 50%;
+            text-align: center;
+            padding: 7px 5px;
+            font-weight: 800;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        
+        .active{
+            color: #fff;
+            background-color: #000;
+        }
+        .active:hover{
+            color: #fff;
+            background-color: rgb(0, 0, 0, 0.8);
+        }
+            #nav_btns span{
+                display: block;
+                border-radius: 5px;
+                line-height: 50px;
+                transition-duration: 0.5s;
+            }
+
+        .closed:hover{
+            color: #fff;
+            background-color: rgb(0, 0, 0);
+        }
+
+    #about{
+        display: flex;
+        gap: 5vw;
+        padding: calc(20vh - 50px);
+    }
+                #title>h1{
+                    margin-bottom: 30px;
+                }
+                #title>p{
+                    width: 50vw;
+                    text-align: justify;
+                }
+
+            #contact{
+                margin-top: 40px;
+            }
+                #contact p{
+                    margin-top: 20px;
+                }
+                #contact a, #contact a:visited{
+                    color: #000;
+                
+                }
+            
+                #technology div{
+                    margin: 20px 0;
+                }
+                #technology img{
+                    width: 150px;
+                    margin-right: 30px;
+                }
+                #links{
+                    width: fit-content;
+                    margin: auto;
+                }
+                    #links a, #links a:visited{
+                        font-size: 14px;
+                        color: #000;
+                    }
+
+
+    #content{
+        height: calc(100vh - 55px);
+    }
+        #projects{
+            grid-template-rows: 1fr 1fr;
+            height: 100%;
+            display: none;
+        }
+            #projects>div:hover .screen{
+                opacity: 1;
+            }
+            #projects>div:first-child{
+                background-image: url('../imgs/photo.png');
+                background-size: cover;
+                background-position: center 0px;
+                border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+            }
+            #projects>div:first-child:hover{
+                background-image: url('../imgs/photo.png');
+                background-size: cover;
+                background-position: center 0px;
+                border-bottom: 1px solid rgb(0, 0, 0, 1);
+            }
+            #projects>div:nth-child(2){
+                background-image: url('../imgs/Inter.png');
+                background-size: cover;
+                background-position: center -120px;
+            }
+                .screen, .screen:visited{
+                    opacity: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgb(0, 0, 0, 0.9);
+                    padding-top: 15vh;
+                    display: block;
+                    text-decoration: none;
+                    transition-duration: 0.5s;
+                }
+                    .screen p{
+                        color: white;
+                        text-align: justify;
+                        display: block;
+                        margin: auto;
+                        width: 60vw;
+                        margin-bottom: 20px;
+                    }
+                    .screen span{
+                        text-decoration: underline;
+                    }
+
+@media (max-width: 925px) {
+    #container{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    #about{
+        display: block;
+        padding: 5vh 15vw;
+    }
+    .screen, .screen:visited{
+        opacity: 1;
+        height: 103%;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.9);
+        padding-top: 5vh;
+        display: block;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+    #technology{
+        margin-top: 20px;
+    }
+    #title>p{
+        width: 70vw;
+    }
+}
+    
